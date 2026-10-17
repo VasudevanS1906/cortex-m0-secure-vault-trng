@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "STM32 Industrial Control",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 140,
+      "left": -140,
+      "attrs": { "color": "red", "label": "E-STOP / RESET" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": 20,
+      "left": -140,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "$serialMonitor:RX", "nucleo:PA2", "", [] ],
+    [ "$serialMonitor:TX", "nucleo:PA3", "", [] ],
+    [ "btn1:1.r", "nucleo:A0", "red", [ "h0" ] ],
+    [ "btn1:2.r", "nucleo:GND.1", "black", [ "h0" ] ],
+    [ "pot1:GND", "nucleo:GND.1", "black", [ "v0" ] ],
+    [ "pot1:VCC", "nucleo:3V3", "orange", [ "v0" ] ],
+    [ "pot1:SIG", "nucleo:A1", "blue", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
