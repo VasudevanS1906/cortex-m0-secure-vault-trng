@@ -39,3 +39,24 @@ The system was benchmarked on an ARM Cortex-M0+ running at 48 MHz:
 
 ## Visual Demonstration
 ![Benchmark Output](aead_out.png)
+
+---
+
+## Technical Report
+The project has been published as a technical report / preprint on Zenodo, to which the link is provided below:  
+https://doi.org/10.5281/zenodo.23441546
+
+---
+
+## Citation
+For now, cite the Zenodo preprint and software record:
+```bibtex
+@misc{swornampillai2026cycleinvariant,
+      title={Cycle-Invariant Lightweight Authenticated Encryption and Cross-Domain Silicon Entropy Harvesting on ARM Cortex-M0+}, 
+      author={Vasudevan Swornampillai},
+      year={2026},
+      month={October},
+      publisher={Zenodo},
+      doi={10.5281/zenodo.23441546},
+      url={[https://doi.org/10.5281/zenodo.23441546](https://doi.org/10.5281/zenodo.23441546)}
+}
